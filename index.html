@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-167487542-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-167487542-1');
+</script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<title>Healthcare</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+    font: sans-serif;
+    color: #777;
+  }
+
+/*Size of h3 and h4 text*/
+h3, h4{
+    margin: 10px 0 30px 0;
+    letter-spacing: 8px;      
+    font-size: 20px;
+    color: white;
+  }
+
+
+/*back to top button*/
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #111;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+
+/*social media logo*/
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 66px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-whatsapp {
+  background: #00b300;
+  color: white;
+  }
+
+
+.fa-telegram {
+  background: #007acc;
+  color: white;
+}
+
+
+
+/* button */
+
+.button6 {
+  border: none;
+  color: white;
+ 
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  margin: 16px 8px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button61 {
+  background-color: white; 
+  color: black; 
+  border: 1px solid #e65c00;
+  border-radius: 12px;
+}
+
+.button61:hover {
+  background-color: #e65c00;
+  color: white;
+}
+
+.button62 {
+  background-color: white; 
+  color: black; 
+  border: 3px solid #00b300;
+  border-radius: 12px;
+}
+
+.button62:hover {
+  background-color: #00b300;
+  color: white;
+}
+
+
+
+
+/* Footer */
+.footer {
+  padding: 40px;
+  text-align: center;
+  background: #29293d;
+  margin-top: 0px;
+}
+
+
+
+.next1 {
+    text-decoration: none;
+    display: inline-block;
+    padding: 14px 24px;
+    font-size: 22px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+.next1:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* button for mobile and tablet*/
+
+@media screen and (max-width: 600px) {
+
+  .next1 {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 13px;
+    background-color: #4CAF50;
+    color: white;
+}
+}
+
+
+
+
+div.ex1 {
+  width: 100%;
+  padding: 50px;
+  font-size: 23px;
+  box-sizing: border-box;
+  background-color: #2d2d30;
+}
+
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+
+ /* this is for iframe */
+
+.container1 {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%; /* 8:5 Aspect Ratio */
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+
+/* this is for smaller screen social media logo */
+
+@media screen and (max-width: 600px) {
+  .fa {
+  
+  font-size: 20px;
+  width: 60px;
+  padding: 20px;
+  text-decoration: none;
+  text-align: center;
+
+}
+}
+
+@media screen and (max-width: 400px) {
+    
+    .fa {
+  
+  font-size: 20px;
+  width: 35px;
+  padding: 8px;
+  text-decoration: none;
+  text-align: center;
+  
+}
+}
+
+
+/* smaler screen div */
+@media screen and (max-width: 600px) {
+    
+    div.ex1 {
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  box-sizing: border-box;
+  background-color: #2d2d30;
+}
+}
+
+
+
+/* smaller screen button */
+@media screen and (max-width: 600px) {
+    
+ .button6 {
+  border: none;
+  color: white;
+  
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  margin: 16px 8px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button61 {
+  background-color: white; 
+  color: black; 
+  border: 1px solid #e65c00;
+  border-radius: 8px;
+}
+  }
+
+  .button62 {
+  background-color: white; 
+  color: black; 
+  border: 1px solid #00b300;
+  border-radius: 8px;
+}
+  }
+
+
+/* smaller screen footer */
+@media screen and (max-width: 600px) {
+    
+ .footer {
+  padding: 5px;
+  height: 320px;
+  
+}
+  
+.footer h3 {
+  font-size: 15px;
+  
+}
+
+.footer h5 {
+  font-size: 12px;
+  
+}
+
+.footer h6 {
+  font-size: 8px;
+  
+}
+
+}
+
+/* smaller screen- back to top button */
+@media screen and (max-width: 600px) {
+#myBtn {
+  
+  bottom: 35px;
+  right: 8px;
+  z-index: 99;
+  font-size: 10px;
+  padding: 7px;
+  border-radius: 2px;
+}
+}
+
+
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+
+
+.carousel-inner img {
+    
+    width: 100%; /* Set width to 100% */
+    margin: auto;
+  }
+  .carousel-caption h3 {
+    color: #fff !important;
+  }
+  
+  
+
+/* navbar */
+  .navbar {
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 0;
+    background-color: #2d2d30;
+    border: 0;
+    font-size: 13px !important;
+    letter-spacing: 4px;
+    opacity: 0.9;
+  }
+  .navbar li a, .navbar .navbar-brand { 
+    color: #d5d5d5 !important;
+}
+  .navbar-nav li a:hover {
+    color: #fff !important;
+  }
+  .navbar-nav li.active a {
+    color: #fff !important;
+    background-color: #29292c !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+  }
+
+
+/* this is for clickable image */
+.containerex {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.containerex img {vertical-align: middle;}
+
+.containerex .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 90%;
+  padding: 10px;
+}
+
+.containerex:hover {
+    opacity: 0.7;
+}
+
+
+/* smaller screen h3, h1 text size */
+@media (max-width: 600px) {
+
+h3 {
+    margin: 10px 0 30px 0;
+    letter-spacing: 2px;      
+    font-size: 9px;
+    color: white;
+  }
+
+  h1 {
+    margin: 10px 0 30px 0;
+    
+    font-size: 15px;
+    color: white;
+  }
+
+  
+  .containerex .content {
+  width: 90%;
+  padding: 0px;
+}
+
+
+}
+
+ </style>
+</head>
+
+
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+
+
+
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+       <a class="navbar-brand" href="#myPage" ><font color="white" size="6" style="font-family: 'Merienda', cursive;">Healthcare</font></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="page1.html">ABOUT HEALTH AND HYGIENE</a></li>
+        <li><a href="page2.html">ABOUT WHO</a></li>
+        <li><a href="page3.html">ABOUT COVID-19</a></li>
+        <li><a href="page4.html">WHO GUIDELINES</a></li>
+        <li><a href="page5.html">HEALTH AND HYGIENE CHART</a></li>
+        <li><a href="page6.html">FLOW CHART</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+  <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="n.jpg" width="1200" height="500px">
+        <div class="carousel-caption">
+          <h1><font style="font-family: 'Dancing Script', cursive;">We care for your health every moment</font></h1>
+          <h3><font color="black" style="font-family: 'Dancing Script', cursive;">during this pandemic</font></h3>
+        </div>      
+      </div>
+
+      <div class="item">
+        <img src="n1.jpg" width="1200" height="500px">
+        <div class="carousel-caption">
+          <h1><font style="font-family: 'Dancing Script', cursive;">We care for your health every moment</font></h1>
+          <h3><font color="black" style="font-family: 'Dancing Script', cursive;">during this pandemic</font></h3>
+        </div>      
+      </div>
+    
+      
+      <div class="item">
+        <img src="n2.jpg" width="1200" height="500px">
+          <div class="carousel-caption">
+            <h1><font style="font-family: 'Dancing Script', cursive;">We care for your health every moment</font></h1>
+            <h3><font color="black" style="font-family: 'Dancing Script', cursive;">during this pandemic</font></h3>
+          </div>      
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+
+
+
+<br>
+ <div class="ex1">
+   <br>
+   <table width="100%"><tr><td align="center"><img src="m4.PNG" width="80%"></td></tr></table><br></div>
+   <br>
+   <div class="ex1">
+   <br>
+    <div class="container1"> 
+   <table width="100%" border="0">
+    <tr>
+  <th><iframe class="responsive-iframe"src="https://www.youtube.com/embed/xKPWngYf2Wk"></iframe></th>
+    </tr>
+   </table>
+  </div>
+   <br>
+</div>
+<br>
+
+
+
+<div class="ex1">
+<p><font color="white">The COVID-19 pandemic, also known as the coronavirus pandemic, is an ongoing pandemic of coronavirus disease 2019 (COVID‑19), caused by severe acute respiratory syndrome coronavirus 2 (SARS‑CoV‑2).The outbreak was first identified in Wuhan, China, in December 2019.</font></p>
+<p><font color="white">The World Health Organization declared the outbreak a Public Health Emergency of International Concern on 30 January, and a pandemic on 11 March.As of 22 May 2020, more than 5.1 million cases of COVID-19 have been reported in more than 188 countries and territories,resulting in more than 333,000 deaths.More than 1.95 million people have recovered from the virus.</font></p>
+</div>
+<br>
+
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+
+</script>
+
+
+  <div class="ex1">
+
+<p><font color="white">The virus is primarily spread between people during close contact,most often via small droplets produced by coughing, sneezing, and talking.The droplets usually fall to the ground or onto surfaces rather than travelling through air over long distances.Less commonly, people may become infected by touching a contaminated surface and then touching their face.It is most contagious during the first three days after the onset of symptoms, although spread is possible before symptoms appear, and from people who do not show symptoms.</font></p>
+<p><font color="white">Common symptoms include fever, cough, fatigue, shortness of breath, and loss of smell.Complications may include pneumonia and acute respiratory distress syndrome.The time from exposure to onset of symptoms is typically around five days but may range from two to fourteen days.There is no known vaccine or specific antiviral treatment.Primary treatment is symptomatic and supportive therapy.</font></p>
+
+
+
+<p><font color="white">The pandemic has caused global social and economic disruption,including the largest global recession since the Great Depression.It has led to the postponement or cancellation of sporting, religious, political, and cultural events,widespread supply shortages exacerbated by panic buying,and decreased emissions of pollutants and greenhouse gases. Schools, universities, and colleges are currently closed either on a nationwide or local basis in 185 countries, affecting approximately 98.5 percent of the world's student population.Misinformation about the virus has spread online,and there have been incidents of xenophobia and discrimination against Chinese people and against those perceived as being Chinese or as being from areas with high infection rates.</font></p>
+
+   </div>
+
+
+
+<br><div class="ex1"></div><br>
+
+
+
+<table width="100%" border="0">
+  <tr>
+  <td align="center">
+<div class="containerex"><a href="https://static.mygov.in/rest/s3fs-public/mygov_158831498053877021.pdf" target="blank" >
+  <img src="b1.jpg" alt="Notebook" style="width:80%; height:100%">
+  <div class="content">
+    <h1 style="font-family: 'Aclonica', sans-serif;">Hotspot Areas</h1>
+    <h3>Click here if you want to know Hotspot areas near you</h3>
+  </div></a>
+</div>
+</td>
+<td align="center">
+  <div class="containerex"><a href="https://www.mygov.in/corona-data/covid19-statewise-status" target="blank">
+  <img src="p2.jpg" alt="Notebook" style="width:80%; height: 100%">
+  <div class="content">
+    <h1 style="font-family: 'Aclonica', sans-serif;">State Wise Details</h1>
+    <h3>Click here if you want to know your state wise details</h3>
+  </div></a>
+   </div>
+  </td>
+ </tr>
+</table>
+
+
+
+<br><div class="ex1"></div><br>
+
+
+
+<table width="100%" border="0">
+  <tr>
+  <td align="center">
+<div class="containerex"><a href="https://covid.apollo247.com/" target="blank">
+  <img src="p1.jpg" alt="Notebook" style="width:80%; height:100%">
+   <div class="content">
+    <h1 style="font-family: 'Aclonica', sans-serif;">Coronavirus risk scan</h1>
+    <h3>Click here if you want to check your COVID-19 risk</h3>
+   </div></a>
+</div>
+</td>
+<td align="center">
+  <div class="containerex"><a href="https://www.mohfw.gov.in/pdf/coronvavirushelplinenumber.pdf" target="blank">
+   <img src="b2.jpg" alt="Notebook" style="width:80%;height:100%">
+    <div class="content">
+      <h1 style="font-family: 'Aclonica', sans-serif;">Helpline no.</h1>
+      <h3>Click here if you want helpline number according to your district and state</h3>
+    </div></a>
+  </div>
+</td>
+</tr>
+</table>
+
+
+
+<br><div class="ex1"></div><br>
+
+
+
+<table width="100%" border="0"><tr>
+  <td align="center">
+<div class="containerex"><a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/question-and-answers-hub/q-a-detail/q-a-coronaviruses#:~:text=symptoms" target="blank">
+  <img src="b3.jpg" alt="Notebook" style="width:80%; height:100%">
+  <div class="content">
+    <h1 style="font-family: 'Aclonica', sans-serif;">Q&A on COVID-19</h1>
+    <h3>Click here for FAQ from WHO official website</h3>
+  </div></a>
+</div>
+</td>
+<td align="center">
+  <div class="containerex"><a href="https://www.pmcares.gov.in/en/" target="blank">
+  <img src="b4.jpg" alt="Notebook" style="width:80%; height:100%">
+  <div class="content">
+    <h1 style="font-family: 'Aclonica', sans-serif;">Donate to PM cares</h1>
+    <h3>Click here if you want to donate to PM fund</h3>
+  </div></a>
+    </div>
+   </td>
+  </tr>
+</table>
+
+
+
+<br><div class="ex1"></div><br>
+
+
+
+<table width="100%" border="0"><tr><td align="center">
+  <a href="https://news.google.com/covid19/map?hl=en-IN&mid=/m/086g2&gl=IN&ceid=IN:en" target="blank"><button class="button6 button61">Click here to get more news about COVID-19</button></a></td></tr>
+<tr>
+  <td align="center">
+  <a href="http://wa.me/41798931892?text=hi" target="blank"><button class="button6 button62">Click here to get instant information about COVID-19 from WHO through whatsapp chat</button></a></td>
+</tr>
+</table>
+  
+
+
+
+<br><div class="ex1"></div><br>
+
+
+
+<div class="ex1">
+  <br>
+<table width="100%"><tr><td align="center"><img src="p4.jpg" width="80%"></td></tr></table><br></div>
+  <br>
+
+<div class="ex1">
+ <hr>
+  <table width="100%" border="0">
+
+    <tr><td>
+      <h2 style="font-family: verdana" align="center"><font color="white" style="font-family: 'Merienda', cursive;"> Government's Social media Helpdesk</font></h2></td></tr></table><br>
+
+      <table width="100%" border="0">
+      <tr><th><a href="https://www.facebook.com/MyGovIndia/" class="fa fa-facebook"></a></th>
+
+      <th><a href="https://twitter.com/mygovindia" class="fa fa-twitter"></a></th>
+
+     <th> <a href="https://www.mygov.in" class="fa fa-google"></a></th>
+
+      <th><a href="https://www.linkedin.com/company/mygov-india/" class="fa fa-linkedin"></a></th>
+
+      <th><a href="https://www.youtube.com/mygovindia" class="fa fa-youtube"></a></th>
+
+      <th><a href="https://www.instagram.com/mygovindia/" class="fa fa-instagram"></a></th>
+
+      <th><a href="https://api.whatsapp.com/send?phone=919013353535&text=Hi&source=&data=&app_absent=" class="fa fa-whatsapp"></a></th>
+
+     <th> <a href="https://t.me/MyGovCoronaNewsdesk" class="fa fa-telegram"></a></th></tr></table>
+    
+  <hr>
+ </div>
+
+<br>
+
+<div class="ex1">
+  <br>
+<table width="100%"><tr><td align="center"><img src="m1.png" width="90%"></td></tr></table><br></div>
+  <br>
+
+
+
+<div class="ex1">
+  <br>
+<table width="100%"><tr><td align="center"><img src="m.png" width="90%"></td></tr></table><br></div>
+  <br>
+
+
+
+
+
+
+<br>
+
+ <table width="100%" border="0">
+  <tr><th><img src="banner.jpg" width=100%; height=500px></th></tr>
+</table>
+
+<tr><td>
+<div class="footer">
+  <h5><font color="#b3b3cc">Website designed for healthy activities</font></h5>
+  <h6><font color="#b3b3cc">Develop and Designed by Pratim Maji</font></h6>
+  <h5><font color="#b3b3cc">Language-English</font></h5>
+  <h5><font color="#b3b3cc"><a href="mailto:healthcaretint@gmail.com">E-mail Support-healthcaretint@gmail.com</a></font></h5>
+  <h5><font color="#b3b3cc"><a href="mailto:pratimmaji2@gmail.com">Pratim Maji-pratimmaji2@gmail.com</a></font></h5>
+  <a href="page1.html" class="next1">Next Page &raquo;</a>
+  <h1 style="font-family: 'Aclonica', sans-serif;"><font color="#b3b3cc">THANKS FOR VISITING OUR WEBSITE</font></h1>
+   </div>
+  </td>
+ </tr>
+</table>
+
+
+
+
+
+
+
+
+
+
